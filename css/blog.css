@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+
+
+.whole-blog{
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.back-to-prev-page{
+    text-align: center;
+}
