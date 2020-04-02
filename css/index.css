@@ -5,9 +5,18 @@
 }
 
 body{
+    font-family: Roboto, sans-serif;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.781);
+}
+
+p{
+    color: rgba(0, 0, 0, 0.603);
 }
 
 /*********** NAV BAR**************/
@@ -20,7 +29,7 @@ body{
 
 .logo{
     text-align: center;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0 50px;
 }
 .nav{
     padding: 20px;
@@ -38,8 +47,63 @@ body{
     color: white;
     background-color:black;
 }
+/********************************BLOG FEED ********************************/
+/****************************************************************/
+/****************************************************************/
 
-@media(min-width:600px){
+.blog-feed{
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    flex: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 30px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card > h1{
+    width:95%;
+}
+.read-more-btn ,.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:black;
+    color: white;
+    margin: 30px;
+}
+
+.read-more-btn:hover,.btn:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+.user-blog-content{
+    width: 85%;
+}
+
+.next-prev-page{
+    margin: auto;
+    text-align: center;
+}
+
+
+/********************************MEDIA QUERIES********************************/
+/****************************************************************/
+/****************************************************************/
+
+@media(min-width:700px){
     .nav-bar{
         display: grid;
         grid-template-areas: "bd hd hd hd";
@@ -53,8 +117,17 @@ body{
         flex-direction: row;
         grid-area: hd;
         justify-content: flex-end;
+    }  
+
+    .blog-feed{
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 20px;
+    }
+
+    .card{
+        width:100%;
+        margin: auto;
     }
     
-    
 }
-*/
